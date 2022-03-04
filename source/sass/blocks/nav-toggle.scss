@@ -9,7 +9,7 @@
 
 .nav-toggle {
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 0;
   background-color: transparent;
   cursor: pointer;
@@ -36,7 +36,7 @@
 }
 
 .nav-toggle--opened {
-  top: 10px;
+  top: 0;
   right: 10px;
   height: 20px;
   width: 20px;

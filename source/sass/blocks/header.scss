@@ -33,6 +33,13 @@
   }
 }
 
+.header__wrapper-img {
+  @include vp-1023 {
+    height: 20px;
+    width: 38px;
+  }
+}
+
 .header__body {
   color: $color-alice-blue;
   padding: 135px 0 0 90px;
