@@ -1,5 +1,5 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
 
 // ---------------------------------
 
@@ -12,6 +12,26 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  const navToggle = document.querySelector('.nav-toggle');
+  const pageNav = document.querySelector('.nav');
+
+  pageNav.classList.remove('nav--opened');
+  pageNav.classList.add('nav--closed');
+
+  navToggle.addEventListener('click', function () {
+    if (navToggle.classList.contains('nav-toggle--closed')) {
+      navToggle.classList.remove('nav-toggle--closed');
+      navToggle.classList.add('nav-toggle--opened');
+      pageNav.classList.remove('nav--closed');
+      pageNav.classList.add('nav--opened');
+    } else {
+      navToggle.classList.remove('nav-toggle--opened');
+      navToggle.classList.add('nav-toggle--closed');
+      pageNav.classList.remove('nav--opened');
+      pageNav.classList.add('nav--closed');
+    }
+  });
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
