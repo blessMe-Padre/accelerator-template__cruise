@@ -1,0 +1,106 @@
+.cruise {
+  padding: 120px 0;
+}
+
+.cruise__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cruise__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cruise__item {
+  position: relative;
+  height: 386px;
+  width: 260px;
+  cursor: pointer;
+  @include vp-1023 {
+    width: 309px;
+    height: 386px;
+  }
+  @include vp-767 {
+    max-width: 270px;
+    height: 386px;
+  }
+}
+
+.cruise__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cruise__name {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  color: $color-alice-blue;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.cruise__descriptions {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  padding: 25px 25px;
+  color: $color-alice-blue;
+  background: $color-tangaroa;
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.cruise__item:hover .cruise__descriptions {
+  opacity: 1;
+}
+
+.cruise__descriptions h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  color: $color-alice-blue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.cruise__descriptions h4 {
+  margin: 0;
+  padding: 0;
+  color: $color-alice-blue;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.cruise__descriptions p {
+  margin: 0 0 15px;
+  padding: 0;
+  color: $color-quartz;
+  font-size: 14px;
+  line-height: 140%;
+}
