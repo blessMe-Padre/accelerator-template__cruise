@@ -3,8 +3,9 @@
   min-height: 138px;
   display: flex;
   align-items: center;
+
   @include vp-767 {
-padding: 40px 0;
+    padding: 40px 0;
   }
 }
 
@@ -12,6 +13,7 @@ padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
@@ -21,6 +23,7 @@ padding: 40px 0;
 .nav-footer__nav {
   display: flex;
   text-align: center;
+
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
@@ -32,6 +35,7 @@ padding: 40px 0;
     width: 38px;
     height: 20px;
   }
+
   @include vp-767 {
     margin-bottom: 30px;
   }
@@ -42,10 +46,11 @@ padding: 40px 0;
   margin: 0 0 0 30px;
   padding: 0;
   display: flex;
+
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 0 30px 0 ;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -57,20 +62,25 @@ padding: 40px 0;
   color: $color-alice-blue;
   padding: 10px 0;
   margin-right: 30px;
+
   @include vp-1023 {
     font-size: 12px;
     line-height: 15px;
   }
+
   @include vp-1023 {
     padding: 5px 0;
   }
+
   @include vp-767 {
     margin-bottom: 20px;
   }
 }
 
 .nav-footer__social svg {
+  cursor: pointer;
   margin-left: 33px;
+
   @include vp-767 {
     margin: 0 30px 0 0;
   }

@@ -1,22 +1,18 @@
+
 .nav-toggle {
   display: none;
   z-index: 9999;
-
-  @include vp-767 {
-    display: block;
-  }
-}
-
-.nav-toggle {
   position: absolute;
   top: 4px;
   right: 0;
   background-color: transparent;
   cursor: pointer;
 
+  @include vp-767 {
+    display: block;
+  }
+
   &--closed {
-    width: 30px;
-    height: 30px;
     height: 24px;
     width: 24px;
     border: none;

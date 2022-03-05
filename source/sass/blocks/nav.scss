@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
   @include vp-767 {
     margin-top: 40px;
   }
@@ -14,6 +15,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @include vp-767 {
     align-items: flex-start;
   }
