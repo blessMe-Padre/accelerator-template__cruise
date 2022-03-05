@@ -33,6 +33,30 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  const menuLinks = document.querySelectorAll('.anchor-link[data-goto]');
+
+  function onMenuLinkClick(evt) {
+    const menuLink = evt.target;
+    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: 'smooth',
+      });
+      evt.preventDefault();
+    }
+  }
+
+  if (menuLinks.length > 0) {
+    menuLinks.forEach((menuLink) => {
+      menuLink.addEventListener('click', onMenuLinkClick);
+    });
+
+  }
+
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
