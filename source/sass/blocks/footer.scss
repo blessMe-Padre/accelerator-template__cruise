@@ -7,7 +7,7 @@
 }
 .footer__map {
   flex: 1 0 50%;
-  background-image: url("../content/map-bg.jpg");
+  background-image: url("../img/content/map-bg.jpg");
   @include vp-767 {
     order: 2;
   }
@@ -63,4 +63,7 @@
   font-size: 16px;
   line-height: 150%;
   color: $color-tangaroa;
+}
+
+.footer__nav {
 }

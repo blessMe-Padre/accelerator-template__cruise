@@ -67,6 +67,7 @@
   top: 0;
   left: 0;
   min-height: 100%;
+  min-width: 100%;
   padding: 25px 25px;
   color: $color-alice-blue;
   background: $color-tangaroa;
@@ -75,6 +76,7 @@
   transition: all 0.2s linear;
 }
 
+.cruise__item:focus .cruise__descriptions,
 .cruise__item:hover .cruise__descriptions {
   opacity: 1;
 }
