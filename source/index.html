@@ -261,7 +261,37 @@
           </ul>
         </div>
       </section>
+      <section class="booking">
+        <div class="booking__wrapper container">
+          <div class="booking__text">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за 3-6 месяцев
+              до даты выезда и сэкономьте до 50%</p>
+          </div>
+          <div class="booking__form">
 
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input class="form__input" type="tel" id="user-name" name="name" placeholder="Имя">
+
+              <label class="visually-hidden" for="user-phone">Номер телефона</label>
+              <input class="form__input" type="tel" id="user-phone" name="phone" placeholder="Телефон">
+
+              <label class="visually-hidden" for="user-email">Адрес почты</label>
+              <input class="form__input" type="email" id="user-email" name="email" placeholder="E-mail">
+              <div class="form__item checkbox">
+                <input id="formAgreement" checked type="checkbox" name="agreement"
+                  class=" visually-hidden checkbox__input">
+                <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку моих персональных
+                    данных</span>
+                </label>
+              </div>
+              <button class="button" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <!-- <section class="intro">
           <div class="container">

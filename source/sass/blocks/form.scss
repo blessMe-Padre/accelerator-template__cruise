@@ -1,0 +1,74 @@
+.form {
+  box-sizing: border-box;
+  max-width: 403px;
+  padding: 50px;
+  background-color: $color-tangaroa;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  @include vp-767 {
+    padding: 20px;
+  }
+}
+
+.form p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-alice-blue;
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.form__item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form__item span {
+  display: block;
+  font-size: 10px;
+  line-height: 120%;
+  color: $color-alice-blue;
+  padding-left: 23px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-tangaroa-alfa;
+  background-color: $color-alice-blue;
+  padding: 11px 16px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.checkbox__custom::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: $color-alice-blue;
+  @include vp-767 {
+    top: 2px;
+  }
+}
+
+.checkbox__input:checked+.checkbox__custom::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 4px;
+  height: 10px;
+  width: 10px;
+  background-image: url("../img/svg/checked.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include vp-767 {
+    top: 4px;
+  }
+}
