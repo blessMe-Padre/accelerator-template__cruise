@@ -4,6 +4,10 @@
   @include vp-1023 {
     padding: 68px 0 100px;
   }
+
+  @include vp-767 {
+    padding: 40px 0 64px;
+  }
 }
 
 .cruise__title {
@@ -16,6 +20,11 @@
 
   @include vp-1023 {
     font-size: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    margin-bottom: 30px;
   }
 }
 
@@ -39,6 +48,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
