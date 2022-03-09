@@ -86,9 +86,14 @@
   }
 }
 
+.nav-footer__link:hover {
+  color: $color-glacier;
+}
+
 .nav-footer__social svg {
   cursor: pointer;
   margin-left: 33px;
+  transition: all 0.8 ease-in;
 
   @include vp-1023 {
     width: 15px;
@@ -98,4 +103,8 @@
   @include vp-767 {
     margin: 0 15px 0 0;
   }
+}
+
+.nav-footer__social svg:hover {
+  transform: scale(1.2);
 }

@@ -26,6 +26,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-alice-blue;
+  transition: all 0.3s ease-in;
   margin-left: 33px;
 
   @include vp-1023 {
@@ -41,6 +42,11 @@
     color: $color-tangaroa;
     padding: 15px 15px 15px 0;
   }
+}
+
+.nav__link:hover {
+  color: $color-quartz;
+  text-shadow: $color-default-white 2px 0 10px;
 }
 
 .nav--closed .nav__list {

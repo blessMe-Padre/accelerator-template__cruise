@@ -10,4 +10,11 @@
   padding: 10px 14px;
   cursor: pointer;
   background-color: $color-alice-blue;
+  transition: all 0.3s ease-in-out;
+}
+
+button:focus,
+button:hover {
+  color: $color-default-white;
+  background-color: $color-glacier;
 }
