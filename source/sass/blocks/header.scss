@@ -42,7 +42,7 @@
 
 .header__body {
   color: $color-alice-blue;
-  padding: 135px 0 0 90px;
+  padding: 160px 0 0 95px;
 
   @include vp-1023 {
     padding-left: 0;
@@ -53,6 +53,7 @@
   font-weight: bold;
   font-size: 54px;
   line-height: 66px;
+  margin-bottom: 11px;
 
   @include vp-1023 {
     font-size: 50px;
@@ -69,6 +70,7 @@
   font-size: 20px;
   line-height: 24px;
   color: $color-alice-blue;
+  margin: 0;
 
   @include vp-1023 {
     font-size: 20px;

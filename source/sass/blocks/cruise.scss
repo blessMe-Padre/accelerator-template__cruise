@@ -1,5 +1,5 @@
 .cruise {
-  padding: 120px 0;
+  padding: 87px 0 120px 0;
 }
 
 .cruise__title {
@@ -8,13 +8,13 @@
   line-height: 150%;
   color: $color-tangaroa;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 }
 
 .cruise__list {
   list-style: none;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -59,7 +59,7 @@
 
 .cruise__name {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 30px;
   color: $color-alice-blue;
   font-size: 18px;
@@ -79,6 +79,9 @@
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   opacity: 0;
   transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cruise__item:focus .cruise__descriptions,
@@ -105,7 +108,7 @@
 }
 
 .cruise__descriptions p {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   padding: 0;
   color: $color-quartz;
   font-size: 14px;

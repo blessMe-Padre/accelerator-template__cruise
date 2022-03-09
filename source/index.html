@@ -76,7 +76,7 @@
                 возможность насладиться видами и природой.</p>
             </li>
             <li class="advantage__item">
-              <svg width="27" height="32">
+              <svg width="38" height="30">
                 <use xlink:href="img/sprite/sprite.svg#double"></use>
               </svg>
               <h3>Система все включено</h3>
@@ -84,7 +84,7 @@
                 по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
             </li>
             <li class="advantage__item">
-              <svg width="38" height="21">
+              <svg width="45" height="30">
                 <use xlink:href="img/sprite/sprite.svg#boat"></use>
               </svg>
               <h3>Экскурсионные туры на Zodiac</h3>
@@ -170,15 +170,17 @@
               </picture>
               <p class="cruise__name">Круиз "Одиссей"</p>
               <div class="cruise__descriptions">
-                <h3>Круиз "Одиссей"</h3>
-                <h4>Маршрут</h4>
-                <p>Чили - Антарктида</p>
-                <h4>Порт отправления</h4>
-                <p>Пунта-Аренас</p>
-                <h4>Продолжительность</h4>
-                <p>13 дней</p>
-                <h4>Цена</h4>
-                <p>от 9700 $</p>
+                <div class="cruise__descriptions-text">
+                  <h3>Круиз "Одиссей"</h3>
+                  <h4>Маршрут</h4>
+                  <p>Чили - Антарктида</p>
+                  <h4>Порт отправления</h4>
+                  <p>Пунта-Аренас</p>
+                  <h4>Продолжительность</h4>
+                  <p>13 дней</p>
+                  <h4>Цена</h4>
+                  <p>от 9700 $</p>
+                </div>
                 <a href="#" class="button">Забронировать</a>
               </div>
             </li>
@@ -281,16 +283,18 @@
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
               <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <label class="visually-hidden" for="user-name">Имя</label>
-              <input class="form__input" type="tel" id="user-name" name="name" placeholder="Имя">
+              <input class="form__input" type="tel" id="user-name" name="name" placeholder="Имя" required
+                pattern="[a-zA-Zа-яА-Я]+">
 
               <label class="visually-hidden" for="user-phone">Номер телефона</label>
-              <input class="form__input" type="tel" id="user-phone" name="phone" placeholder="Телефон">
+              <input class="form__input" type="tel" id="user-phone" name="phone" placeholder="Телефон"
+                title="89991234567" required pattern="[0-9]{11}">
 
               <label class="visually-hidden" for="user-email">Адрес почты</label>
-              <input class="form__input" type="email" id="user-email" name="email" placeholder="E-mail">
+              <input class="form__input" type="email" id="user-email" name="email" placeholder="E-mail" required>
               <div class="form__item checkbox">
                 <input id="formAgreement" checked type="checkbox" name="agreement"
-                  class=" visually-hidden checkbox__input">
+                  class=" visually-hidden checkbox__input" required>
                 <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку моих персональных
                     данных</span>
                 </label>

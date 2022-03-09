@@ -25,7 +25,7 @@
 .booking__text {
   flex: 0 0 50%;
   padding-right: 10px;
-  padding-left: 50px;
+  padding-left: 60px;
 
   @include vp-1023 {
     padding-left: 0;
@@ -40,7 +40,8 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 150%;
-  margin-top: 170px;
+  margin-top: 165px;
+  margin-bottom: 8px;
 
   @include vp-1023 {
     margin-top: 100px;
@@ -58,6 +59,8 @@
 .booking__text p {
   font-size: 18px;
   line-height: 150%;
+  max-width: 352px;
+  margin: 0;
 
   @include vp-1023 {
     text-align: center;
@@ -72,7 +75,7 @@
 }
 
 .booking__form {
-  padding-right: 50px;
+  padding-right: 60px;
 
   @include vp-1023 {
     padding-right: 0;

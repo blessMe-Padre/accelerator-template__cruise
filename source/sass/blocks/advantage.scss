@@ -1,6 +1,6 @@
 .advantage {
   min-height: 562px;
-  padding: 120px 0;
+  padding: 80px 0;
   background-image: url("../img/content/advantage.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -17,7 +17,7 @@
   font-size: 28px;
   line-height: 150%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .advantage__list {
@@ -45,13 +45,19 @@
   background-color: $color-alice-blue;
 }
 
+.advantage__item svg {
+  margin-bottom: 12px;
+}
+
 .advantage__item h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  margin: 0 0 10px 0;
 }
 
 .advantage__item p {
   font-size: 14px;
   line-height: 140%;
+  margin: 0;
 }
