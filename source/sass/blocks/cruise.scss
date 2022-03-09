@@ -1,5 +1,9 @@
 .cruise {
   padding: 87px 0 120px 0;
+
+  @include vp-1023 {
+    padding: 68px 0 100px;
+  }
 }
 
 .cruise__title {
@@ -9,6 +13,10 @@
   color: $color-tangaroa;
   text-align: center;
   margin-bottom: 49px;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
 }
 
 .cruise__list {
@@ -26,7 +34,7 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+    padding: 0 15px;
   }
 
   @include vp-767 {
@@ -82,6 +90,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include vp-1023 {
+    padding: 30px 35px;
+  }
 }
 
 .cruise__item:focus .cruise__descriptions,
@@ -90,12 +102,16 @@
 }
 
 .cruise__descriptions h3 {
-  margin: 0 0 20px;
   padding: 0;
   color: $color-alice-blue;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  margin: 0 0 20px;
+
+  @include vp-1023 {
+    margin: 0 0 12px;
+  }
 }
 
 .cruise__descriptions h4 {

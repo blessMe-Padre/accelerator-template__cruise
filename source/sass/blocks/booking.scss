@@ -10,6 +10,10 @@
     background-image: url("../img/content/booking-bg@2x.jpg");
     background-size: cover;
   }
+
+  @include vp-1023 {
+    padding: 0;
+  }
 }
 
 .booking__wrapper {
@@ -19,6 +23,7 @@
 
   @include vp-1023 {
     justify-content: center;
+    padding-bottom: 100px;
   }
 }
 
@@ -28,6 +33,7 @@
   padding-left: 60px;
 
   @include vp-1023 {
+    padding-right: 0;
     padding-left: 0;
   }
 
@@ -44,9 +50,10 @@
   margin-bottom: 8px;
 
   @include vp-1023 {
-    margin-top: 100px;
     font-size: 34px;
     white-space: nowrap;
+    margin-top: 90px;
+    margin-bottom: 0;
   }
 
   @include vp-767 {
@@ -63,8 +70,10 @@
   margin: 0;
 
   @include vp-1023 {
+    max-width: 100%;
     text-align: center;
-    margin-bottom: 60px;
+    padding: 0 20px;
+    margin-bottom: 54px;
   }
 
   @include vp-767 {
