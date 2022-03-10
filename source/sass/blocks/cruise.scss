@@ -97,6 +97,7 @@
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
