@@ -1695,9 +1695,10 @@ form input {
     position: absolute;
     top: -112px;
     right: -16px;
+    overflow-y: auto;
     padding-top: 100px;
     width: 103%;
-    height: 100vh;
+    height: 110vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

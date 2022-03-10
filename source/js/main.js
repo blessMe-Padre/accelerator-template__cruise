@@ -31,6 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
       if (pageNav.classList.contains('nav--opened')) {
         pageNav.classList.remove('nav--opened');
         pageNav.classList.add('nav--closed');
+        navToggle.classList.remove('nav-toggle--opened');
+        navToggle.classList.add('nav-toggle--closed');
       }
       window.scrollTo({
         top: gotoBlockValue,

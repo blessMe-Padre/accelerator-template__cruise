@@ -61,9 +61,10 @@
     position: absolute;
     top: -112px;
     right: -16px;
+    overflow-y: auto;
     padding-top: 100px;
     width: 103%;
-    height: 100vh;
+    height: 110vh;
     flex-direction: column;
     justify-content: flex-start;
     background-color: $color-alice-blue;
