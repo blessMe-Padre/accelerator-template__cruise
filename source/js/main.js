@@ -28,7 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
-
+      if (pageNav.classList.contains('nav--opened')) {
+        pageNav.classList.remove('nav--opened');
+        pageNav.classList.add('nav--closed');
+      }
       window.scrollTo({
         top: gotoBlockValue,
         behavior: 'smooth',
