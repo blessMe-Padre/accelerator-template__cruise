@@ -73,10 +73,3 @@
     background-position: 20px 50px;
   }
 }
-
-.header--nojs {
-  @include vp-767 {
-    display: block;
-  }
-}
-// npm run createWebp

@@ -13,8 +13,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-button:focus,
-button:hover {
+.button:focus,
+.button:hover {
   color: $color-default-white;
   background-color: $color-glacier;
 }

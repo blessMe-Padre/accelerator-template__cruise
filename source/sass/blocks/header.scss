@@ -93,3 +93,9 @@
     line-height: 140%;
   }
 }
+
+.header--nojs {
+  @include vp-767 {
+    display: block;
+  }
+}

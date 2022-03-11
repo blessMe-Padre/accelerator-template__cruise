@@ -387,7 +387,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }
@@ -395,7 +395,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
 }
@@ -403,7 +403,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
@@ -411,7 +411,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
@@ -641,142 +641,6 @@ button,
   padding: 0 40px;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .page__body {
   margin: 0;
   padding: 0;
@@ -785,7 +649,7 @@ button,
   line-height: 24px;
   font-weight: 400;
   color: #011c40;
-  background-color: #e5e5e5;
+  background-color: #f9fbfd;
 }
 
 .header {
@@ -933,7 +797,6 @@ button,
 
 .intro {
   padding: 120px 0;
-  background-color: #e5e5e5;
 }
 
 .intro__wrapper {
@@ -1162,8 +1025,8 @@ button,
   transition: all 0.3s ease-in-out;
 }
 
-button:focus,
-button:hover {
+.button:focus,
+.button:hover {
   color: #ffffff;
   background-color: #729fc8;
 }
@@ -1216,7 +1079,7 @@ button:hover {
   padding-right: 60px;
 }
 
-form {
+.form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 403px;
@@ -1226,7 +1089,7 @@ form {
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
-form p {
+.form p {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -1248,7 +1111,7 @@ form p {
   padding-left: 23px;
 }
 
-form input {
+.form input {
   display: block;
   width: 100%;
   font-size: 14px;
@@ -1417,13 +1280,6 @@ form input {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-}
-
-@media (hover: hover), screen and (min-width: 0\0) {
-  .btn:hover,
-  .btn:focus {
-    opacity: 0.8;
-  }
 }
 
 @media (max-width: 1439px) {
@@ -1628,19 +1484,6 @@ form input {
     padding: 0 15px;
   }
 
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-
   .header {
     min-height: 500px;
   }
@@ -1665,6 +1508,10 @@ form input {
   .header__body p {
     font-size: 16px;
     line-height: 140%;
+  }
+
+  .header--nojs {
+    display: block;
   }
 
   .nav {
@@ -1710,10 +1557,6 @@ form input {
     background-image: url("../img/svg/logo-black.svg");
     background-repeat: no-repeat;
     background-position: 20px 50px;
-  }
-
-  .header--nojs {
-    display: block;
   }
 
   .nav-toggle {
@@ -1816,11 +1659,11 @@ form input {
     margin-bottom: 33px;
   }
 
-  form {
+  .form {
     padding: 20px 30px 40px 29px;
   }
 
-  form p {
+  .form p {
     text-align: center;
     margin-bottom: 22px;
   }
