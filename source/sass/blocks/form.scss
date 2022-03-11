@@ -52,17 +52,3 @@
   border: none;
   margin-bottom: 20px;
 }
-
-.checkbox__custom::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background-color: $color-alice-blue;
-
-  @include vp-767 {
-    top: 2px;
-  }
-}

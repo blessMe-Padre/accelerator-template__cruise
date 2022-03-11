@@ -1123,16 +1123,6 @@ button,
   margin-bottom: 20px;
 }
 
-.checkbox__custom::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background-color: #f9fbfd;
-}
-
 .checkbox input {
   position: absolute;
   width: 1px;
@@ -1158,6 +1148,16 @@ button,
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox__custom::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
 }
 
 .footer__contact {
@@ -1681,12 +1681,12 @@ button,
     margin-bottom: 27px;
   }
 
-  .checkbox__custom::before {
-    top: 2px;
-  }
-
   .checkbox input:checked + .checkbox__custom::after {
     top: 4px;
+  }
+
+  .checkbox__custom::before {
+    top: 2px;
   }
 
   .footer__contact {
