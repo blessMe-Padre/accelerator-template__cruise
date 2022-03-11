@@ -90,6 +90,11 @@
   color: $color-glacier;
 }
 
+.nav-footer__social {
+  display: flex;
+  align-items: center;
+}
+
 .nav-footer__social svg {
   cursor: pointer;
   margin-left: 33px;

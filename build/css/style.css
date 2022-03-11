@@ -1268,6 +1268,15 @@ button,
   color: #729fc8;
 }
 
+.nav-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .nav-footer__social svg {
   cursor: pointer;
   margin-left: 33px;
