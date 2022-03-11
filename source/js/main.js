@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  const formInput = document.querySelectorAll('.form__input');
+  const formInput = document.querySelectorAll('input');
 
   formInput.forEach((el) => {
     el.addEventListener('change', changeHandler);
