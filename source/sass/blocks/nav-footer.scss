@@ -50,6 +50,8 @@
   margin: 0 0 0 40px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
 
   @include vp-1023 {
     margin: 0 0 0 30px;
@@ -97,8 +99,16 @@
 
 .nav-footer__social svg {
   cursor: pointer;
-  margin-left: 33px;
   transition: all 0.8 ease-in;
+
+  @include vp-1023 {
+    width: 15px;
+  }
+}
+
+.nav-footer__social a {
+  padding: 5px 10px;
+  margin-left: 20px;
 
   @include vp-1023 {
     width: 15px;

@@ -2,6 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const navToggle = document.querySelector('.nav-toggle');
   const pageNav = document.querySelector('.nav');
+  const body = document.querySelector('.page__body');
+  const header = document.querySelector('.header__wrapper');
+
+  header.classList.remove('header__wrapper--nojs');
 
   pageNav.classList.remove('nav--opened');
   pageNav.classList.add('nav--closed');
@@ -10,11 +14,13 @@ window.addEventListener('DOMContentLoaded', () => {
     if (navToggle.classList.contains('nav-toggle--closed')) {
       navToggle.classList.remove('nav-toggle--closed');
       navToggle.classList.add('nav-toggle--opened');
+      body.classList.add('page__body--lock');
       pageNav.classList.remove('nav--closed');
       pageNav.classList.add('nav--opened');
     } else {
       navToggle.classList.remove('nav-toggle--opened');
       navToggle.classList.add('nav-toggle--closed');
+      body.classList.remove('page__body--lock');
       pageNav.classList.remove('nav--opened');
       pageNav.classList.add('nav--closed');
     }
@@ -31,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (pageNav.classList.contains('nav--opened')) {
         pageNav.classList.remove('nav--opened');
         pageNav.classList.add('nav--closed');
+        body.classList.remove('page__body--lock');
         navToggle.classList.remove('nav-toggle--opened');
         navToggle.classList.add('nav-toggle--closed');
       }

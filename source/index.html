@@ -14,7 +14,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__wrapper--nojs">
           <a><img src="img/svg/logo.svg" height="38" width="72" class="header__wrapper-img" alt="логотип"></a>
 
           <button class="nav-toggle nav-toggle--closed" type="button" aria-label="Открыть меню"></button>
@@ -326,34 +326,37 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer page-section-4">
-      <div class="container">
-        <div class="footer__contact">
-          <div class="footer__map">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"
-              width="560" height="306"></iframe>
-          </div>
-          <div class="footer__text">
-            <p>У&nbsp;вас ещё остались вопросы или сомнения?
-              Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
-            <address>
-              <svg width="18" height="22">
-                <use xlink:href="img/sprite/sprite.svg#mark"></use>
-              </svg>
-              г. Санкт Петербург, ул. Большая Конюшенная, 19/8
-            </address>
+      <section class="contact">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="container">
+          <div class="contact__wrapper">
+            <div class="contact__map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfb8745e30974c7dbbcc5eeeda8c8be2eb62fbd4cb1ff956a5adf535bf09aa3&amp;source=constructor"
+                width="560" height="306"></iframe>
+            </div>
+            <div class="contact__text">
+              <p>У&nbsp;вас ещё остались вопросы или сомнения?
+                Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+              <address>
+                <svg width="18" height="22">
+                  <use xlink:href="img/sprite/sprite.svg#mark"></use>
+                </svg>
+                г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+              </address>
 
-            <a class="footer__map-link" href="tel:+88002000000">
-              <svg width="18" height="18">
-                <use xlink:href="img/sprite/sprite.svg#tel"></use>
-              </svg>
-              8-800-200-00-00
-            </a>
+              <a class="contact__map-link" href="tel:+88002000000">
+                <svg width="18" height="18">
+                  <use xlink:href="img/sprite/sprite.svg#tel"></use>
+                </svg>
+                8-800-200-00-00
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
+    <footer class="footer page-section-4">
       <div class="footer__nav nav-footer">
         <div class="container">
           <div class="nav-footer__wrapper">

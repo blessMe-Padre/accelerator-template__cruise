@@ -652,6 +652,22 @@ button,
   background-color: #f9fbfd;
 }
 
+.page__body--lock {
+  overflow: hidden;
+}
+
+.page__body--lock::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -662,6 +678,17 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.header__wrapper--nojs .nav-toggle {
+  display: none;
+}
+
+.header__wrapper--nojs .nav--opened .nav__list {
+  position: static;
+  height: auto;
+  background-image: none;
+  padding-top: 0;
 }
 
 .header__wrapper {
@@ -702,6 +729,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 50;
 }
 
 .nav__list {
@@ -766,10 +794,9 @@ button,
 .nav-toggle--opened {
   top: 0;
   right: 10px;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border: none;
-  padding: 0;
 }
 
 .nav-toggle--opened::after,
@@ -1175,14 +1202,14 @@ button,
   cursor: pointer;
 }
 
-.footer__contact {
+.contact__wrapper {
   padding: 116px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__map {
+.contact__map {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
@@ -1190,19 +1217,19 @@ button,
   background-image: url("../img/content/map-bg.jpg");
 }
 
-.footer__map iframe {
+.contact__map iframe {
   width: 560px;
   height: 306px;
   border: none;
 }
 
-.footer__text {
+.contact__text {
   padding-top: 60px;
   padding-left: 99px;
   margin-bottom: 33px;
 }
 
-.footer__text p {
+.contact__text p {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -1210,7 +1237,7 @@ button,
   margin-bottom: 33px;
 }
 
-.footer__text address {
+.contact__text address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1220,17 +1247,19 @@ button,
   margin-bottom: 20px;
 }
 
-.footer__text svg {
+.contact__text svg {
   margin-right: 10px;
 }
 
-.footer__map-link {
+.contact__map-link {
+  display: block;
   font-size: 16px;
   line-height: 150%;
   color: #011c40;
+  margin-bottom: 10px;
 }
 
-.footer__map-link:hover {
+.contact__map-link:hover {
   color: rgba(1, 28, 64, 0.7);
 }
 
@@ -1271,6 +1300,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 800px;
 }
 
 .nav-footer__link {
@@ -1298,10 +1330,14 @@ button,
 
 .nav-footer__social svg {
   cursor: pointer;
-  margin-left: 33px;
   -webkit-transition: all 0.8 ease-in;
   -o-transition: all 0.8 ease-in;
   transition: all 0.8 ease-in;
+}
+
+.nav-footer__social a {
+  padding: 5px 10px;
+  margin-left: 20px;
 }
 
 .nav-footer__social svg:hover {
@@ -1455,25 +1491,25 @@ button,
     padding-right: 0;
   }
 
-  .footer__contact {
+  .contact__wrapper {
     padding-bottom: 77px;
   }
 
-  .footer__map iframe {
+  .contact__map iframe {
     width: 324px;
     height: 335px;
   }
 
-  .footer__text {
+  .contact__text {
     padding-top: 32px;
     padding-left: 15px;
   }
 
-  .footer__text p {
+  .contact__text p {
     margin-bottom: 30px;
   }
 
-  .footer__text svg {
+  .contact__text svg {
     width: 25px;
     height: 22px;
   }
@@ -1502,6 +1538,10 @@ button,
   }
 
   .nav-footer__social svg {
+    width: 15px;
+  }
+
+  .nav-footer__social a {
     width: 15px;
     margin-left: 18px;
   }
@@ -1708,25 +1748,25 @@ button,
     top: 2px;
   }
 
-  .footer__contact {
+  .contact__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 54px;
   }
 
-  .footer__map {
+  .contact__map {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .footer__map iframe {
+  .contact__map iframe {
     width: 100%;
     height: 316px;
   }
 
-  .footer__text {
+  .contact__text {
     margin-bottom: 33px;
     padding-top: 40px;
     padding-left: 0;
@@ -1775,7 +1815,7 @@ button,
     margin-bottom: 5px;
   }
 
-  .nav-footer__social svg {
+  .nav-footer__social a {
     margin: 0 15px 0 0;
   }
 }
