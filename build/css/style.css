@@ -914,12 +914,16 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: -webkit-min-content;
+  -ms-grid-rows: min-content;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
   gap: 30px;
 }
 
 .cruise__item {
   position: relative;
-  height: 386px;
+  min-height: 386px;
   width: 260px;
   cursor: pointer;
 }
@@ -944,9 +948,9 @@ button,
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  top: 0;
-  left: 0;
-  min-height: 100%;
+  bottom: 0;
+  height: 386px;
+  max-height: 100%;
   min-width: 100%;
   padding: 25px 25px;
   color: #f9fbfd;
@@ -1023,6 +1027,10 @@ button,
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .button:focus,
@@ -1066,6 +1074,7 @@ button,
   line-height: 150%;
   margin-top: 165px;
   margin-bottom: 8px;
+  padding-right: 10px;
 }
 
 .booking__text p {
@@ -1137,6 +1146,10 @@ button,
   clip-path: inset(100%);
 }
 
+.checkbox input:focus + .checkbox__custom::before {
+  outline: 2px solid #e59700;
+}
+
 .checkbox input:checked + .checkbox__custom::after {
   position: absolute;
   content: "";
@@ -1148,6 +1161,7 @@ button,
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .checkbox__custom::before {
@@ -1158,6 +1172,7 @@ button,
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
+  cursor: pointer;
 }
 
 .footer__contact {
@@ -1213,6 +1228,10 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #011c40;
+}
+
+.footer__map-link:hover {
+  color: rgba(1, 28, 64, 0.7);
 }
 
 .nav-footer {

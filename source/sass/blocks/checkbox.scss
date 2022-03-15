@@ -11,6 +11,10 @@
   clip-path: inset(100%);
 }
 
+.checkbox input:focus + .checkbox__custom::before {
+  outline: 2px solid $color-tangerine;
+}
+
 .checkbox input:checked + .checkbox__custom::after {
   position: absolute;
   content: "";
@@ -22,6 +26,7 @@
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   @include vp-767 {
     top: 4px;
@@ -36,6 +41,7 @@
   width: 18px;
   height: 18px;
   background-color: $color-alice-blue;
+  cursor: pointer;
 
   @include vp-767 {
     top: 2px;
