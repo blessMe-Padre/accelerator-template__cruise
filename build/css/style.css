@@ -843,7 +843,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .intro__text h2 {
@@ -899,7 +899,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 360px;
-  padding: 30px;
+  padding: 30px 25px 30px 30px;
   background-color: #f9fbfd;
 }
 
@@ -1259,6 +1259,10 @@ button,
   margin-bottom: 10px;
 }
 
+.contact__map-link svg {
+  margin-right: 0;
+}
+
 .contact__map-link:hover {
   color: rgba(1, 28, 64, 0.7);
 }
@@ -1337,7 +1341,8 @@ button,
 
 .nav-footer__social a {
   padding: 5px 10px;
-  margin-left: 20px;
+  margin-left: 23px;
+  margin-right: -10px;
 }
 
 .nav-footer__social svg:hover {
@@ -1348,7 +1353,7 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 32px;
+    padding: 0 40px;
   }
 }
 
@@ -1389,7 +1394,7 @@ button,
   }
 
   .header__body p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
   }
 
@@ -1402,10 +1407,19 @@ button,
     padding: 90px 0 68px;
   }
 
+  .intro__text {
+    padding-right: 15px;
+  }
+
   .intro__text h2 {
     margin-top: 0;
     font-size: 26px;
     line-height: 140%;
+    margin-bottom: 17px;
+  }
+
+  .intro__text p {
+    margin-top: 0;
   }
 
   .intro__image img {
@@ -1415,11 +1429,11 @@ button,
   }
 
   .advantage {
-    padding: 70px 0 100px;
+    padding: 75px 0 100px;
   }
 
   .advantage__title {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .advantage__list {
@@ -1427,7 +1441,12 @@ button,
   }
 
   .advantage__item {
+    max-width: 206px;
     padding: 20px 17px;
+  }
+
+  .advantage__item h3 {
+    margin: 0 0 7px 0;
   }
 
   .cruise {
@@ -1509,6 +1528,10 @@ button,
     margin-bottom: 30px;
   }
 
+  .contact__text address {
+    margin-bottom: 17px;
+  }
+
   .contact__text svg {
     width: 25px;
     height: 22px;
@@ -1524,26 +1547,25 @@ button,
   }
 
   .nav-footer__list {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 25px;
   }
 
   .nav-footer__link {
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .nav-footer__link {
     padding: 5px 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    margin-right: 24px;
   }
 
   .nav-footer__social svg {
+    height: 16px;
     width: 15px;
   }
 
   .nav-footer__social a {
-    width: 15px;
-    margin-left: 18px;
+    margin-left: 12px;
+    margin-bottom: -10px;
   }
 }
 
@@ -1651,11 +1673,11 @@ button,
   }
 
   .intro__text h2 {
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 16px;
   }
 
   .intro__text p {
-    margin: 0;
     margin-bottom: 20px;
   }
 
@@ -1679,7 +1701,12 @@ button,
   }
 
   .advantage__item {
+    max-width: 100%;
     min-height: 250px;
+  }
+
+  .advantage__item h3 {
+    max-width: 215px;
   }
 
   .cruise {
@@ -1702,6 +1729,11 @@ button,
     height: 386px;
   }
 
+  .cruise__name {
+    bottom: 0;
+    left: 25px;
+  }
+
   .booking {
     padding-bottom: 66px;
   }
@@ -1722,7 +1754,7 @@ button,
   .booking__text p {
     font-size: 16px;
     line-height: 140%;
-    min-width: 260px;
+    min-width: 290px;
     padding: 0 10px;
     margin-bottom: 33px;
   }
@@ -1752,7 +1784,7 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 0;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
   }
 
   .contact__map {
@@ -1797,7 +1829,7 @@ button,
   }
 
   .nav-footer__img {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .nav-footer__list {
@@ -1816,7 +1848,7 @@ button,
   }
 
   .nav-footer__social a {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 -15px;
   }
 }
 

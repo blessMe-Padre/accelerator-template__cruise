@@ -41,7 +41,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
 
@@ -54,7 +54,7 @@
   max-width: 800px;
 
   @include vp-1023 {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 25px;
   }
 
   @include vp-767 {
@@ -76,11 +76,9 @@
   @include vp-1023 {
     font-size: 12px;
     line-height: 15px;
-  }
-
-  @include vp-1023 {
     padding: 5px 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    margin-right: 24px;
   }
 
   @include vp-767 {
@@ -102,21 +100,23 @@
   transition: all 0.8 ease-in;
 
   @include vp-1023 {
+    height: 16px;
     width: 15px;
   }
 }
 
 .nav-footer__social a {
   padding: 5px 10px;
-  margin-left: 20px;
+  margin-left: 23px;
+  margin-right: -10px;
 
   @include vp-1023 {
-    width: 15px;
-    margin-left: 18px;
+    margin-left: 12px;
+    margin-bottom: -10px;
   }
 
   @include vp-767 {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 -15px;
   }
 }
 

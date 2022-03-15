@@ -83,6 +83,11 @@
   color: $color-alice-blue;
   font-size: 18px;
   line-height: 150%;
+
+  @include vp-767 {
+    bottom: 0;
+    left: 25px;
+  }
 }
 
 .cruise__descriptions {
