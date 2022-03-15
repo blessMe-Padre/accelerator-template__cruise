@@ -793,7 +793,7 @@ button,
 
 .nav-toggle--opened {
   top: 0;
-  right: 10px;
+  right: -12px;
   height: 30px;
   width: 30px;
   border: none;
@@ -1496,7 +1496,7 @@ button,
     font-size: 34px;
     white-space: nowrap;
     margin-top: 90px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 
   .booking__text p {
@@ -1634,7 +1634,7 @@ button,
     right: -16px;
     overflow-y: auto;
     padding-top: 100px;
-    width: 103%;
+    width: 98.5%;
     height: 110vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
