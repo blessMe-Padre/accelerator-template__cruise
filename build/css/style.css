@@ -899,7 +899,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 360px;
-  padding: 30px 25px 30px 30px;
+  padding: 30px 25px 26px 30px;
   background-color: #f9fbfd;
 }
 
@@ -918,6 +918,15 @@ button,
   font-size: 14px;
   line-height: 140%;
   margin: 0;
+  padding-right: 15px;
+}
+
+.advantage__item:nth-child(2) p {
+  padding-right: 20px;
+}
+
+.advantage__item:nth-child(3) p {
+  padding-right: 60px;
 }
 
 .cruise {
@@ -979,7 +988,7 @@ button,
   height: 386px;
   max-height: 100%;
   min-width: 100%;
-  padding: 25px 25px;
+  padding: 30px 25px 34px 25px;
   color: #f9fbfd;
   background: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -1019,7 +1028,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 
 .cruise__descriptions h4 {
@@ -1119,7 +1128,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 403px;
-  padding: 30px 50px 50px;
+  padding: 30px 50px 53px;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
@@ -1244,7 +1253,7 @@ button,
   font-style: normal;
   font-size: 16px;
   line-height: 150%;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .contact__text svg {
@@ -1260,7 +1269,8 @@ button,
 }
 
 .contact__map-link svg {
-  margin-right: 0;
+  margin-bottom: -3px;
+  margin-right: 7px;
 }
 
 .contact__map-link:hover {
@@ -1316,7 +1326,7 @@ button,
   line-height: 20px;
   color: #f9fbfd;
   padding: 10px 0;
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .nav-footer__link:hover {
@@ -1337,6 +1347,7 @@ button,
   -webkit-transition: all 0.8 ease-in;
   -o-transition: all 0.8 ease-in;
   transition: all 0.8 ease-in;
+  margin-bottom: -5px;
 }
 
 .nav-footer__social a {
@@ -1449,6 +1460,18 @@ button,
     margin: 0 0 7px 0;
   }
 
+  .advantage__item p {
+    padding-right: 0;
+  }
+
+  .advantage__item:nth-child(2) p {
+    padding-right: 0;
+  }
+
+  .advantage__item:nth-child(3) p {
+    padding-right: 0;
+  }
+
   .cruise {
     padding: 68px 0 100px;
   }
@@ -1468,16 +1491,26 @@ button,
     height: 386px;
   }
 
+  .cruise__name {
+    bottom: 7px;
+    left: 35px;
+  }
+
   .cruise__descriptions {
-    padding: 30px 35px;
+    padding: 30px 35px 33px 35px;
   }
 
   .cruise__descriptions h3 {
-    margin: 0 0 12px;
+    margin: 0 0 15px;
+  }
+
+  .cruise__descriptions p {
+    margin-bottom: 13px;
   }
 
   .booking {
-    padding: 0;
+    padding: 90px;
+    padding-bottom: 0;
   }
 
   .booking__wrapper {
@@ -1495,15 +1528,16 @@ button,
   .booking__text h2 {
     font-size: 34px;
     white-space: nowrap;
-    margin-top: 90px;
-    margin-bottom: 2px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 3px;
   }
 
   .booking__text p {
     max-width: 100%;
     text-align: center;
     padding: 0 20px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .booking__form {
@@ -1529,12 +1563,19 @@ button,
   }
 
   .contact__text address {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .contact__text svg {
     width: 25px;
     height: 22px;
+  }
+
+  .contact__map-link svg {
+    width: 18px;
+    height: 22px;
+    margin-bottom: -3px;
+    margin-right: 7px;
   }
 
   .nav-footer {
@@ -1561,6 +1602,7 @@ button,
   .nav-footer__social svg {
     height: 16px;
     width: 15px;
+    margin-bottom: 0;
   }
 
   .nav-footer__social a {
@@ -1734,7 +1776,12 @@ button,
     left: 25px;
   }
 
+  .cruise__descriptions {
+    padding: 30px 25px 33px;
+  }
+
   .booking {
+    padding: 0;
     padding-bottom: 66px;
   }
 
@@ -1766,10 +1813,16 @@ button,
   .form p {
     text-align: center;
     margin-bottom: 22px;
+    line-height: 140%;
+    margin-bottom: 30px;
   }
 
   .form__item {
     margin-bottom: 27px;
+  }
+
+  .form__item span {
+    padding-left: 30px;
   }
 
   .checkbox input:checked + .checkbox__custom::after {
@@ -1777,14 +1830,15 @@ button,
   }
 
   .checkbox__custom::before {
-    top: 2px;
+    top: 0;
+    left: 2px;
   }
 
   .contact__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 0;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
   }
 
   .contact__map {
@@ -1799,9 +1853,18 @@ button,
   }
 
   .contact__text {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     padding-top: 40px;
     padding-left: 0;
+  }
+
+  .contact__text p {
+    margin-bottom: 27px;
+  }
+
+  .contact__text-addres svg {
+    width: 28px;
+    height: 30px;
   }
 
   .nav-footer {
@@ -1848,7 +1911,7 @@ button,
   }
 
   .nav-footer__social a {
-    margin: 0 15px 0 -15px;
+    margin: 0 18px 0 -15px;
   }
 }
 

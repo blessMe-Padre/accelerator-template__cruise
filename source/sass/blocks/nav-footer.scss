@@ -71,7 +71,7 @@
   line-height: 20px;
   color: $color-alice-blue;
   padding: 10px 0;
-  margin-right: 30px;
+  margin-right: 32px;
 
   @include vp-1023 {
     font-size: 12px;
@@ -98,10 +98,12 @@
 .nav-footer__social svg {
   cursor: pointer;
   transition: all 0.8 ease-in;
+  margin-bottom: -5px;
 
   @include vp-1023 {
     height: 16px;
     width: 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -116,7 +118,7 @@
   }
 
   @include vp-767 {
-    margin: 0 15px 0 -15px;
+    margin: 0 18px 0 -15px;
   }
 }
 

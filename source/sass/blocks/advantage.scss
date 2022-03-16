@@ -58,7 +58,7 @@
 .advantage__item {
   box-sizing: border-box;
   max-width: 360px;
-  padding: 30px 25px 30px 30px;
+  padding: 30px 25px 26px 30px;
   background-color: $color-alice-blue;
 
   @include vp-1023 {
@@ -95,4 +95,25 @@
   font-size: 14px;
   line-height: 140%;
   margin: 0;
+  padding-right: 15px;
+
+  @include vp-1023 {
+    padding-right: 0;
+  }
+}
+
+.advantage__item:nth-child(2) p {
+  padding-right: 20px;
+
+  @include vp-1023 {
+    padding-right: 0;
+  }
+}
+
+.advantage__item:nth-child(3) p {
+  padding-right: 60px;
+
+  @include vp-1023 {
+    padding-right: 0;
+  }
 }

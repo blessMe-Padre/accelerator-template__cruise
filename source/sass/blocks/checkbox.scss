@@ -44,6 +44,7 @@
   cursor: pointer;
 
   @include vp-767 {
-    top: 2px;
+    top: 0;
+    left: 2px;
   }
 }
